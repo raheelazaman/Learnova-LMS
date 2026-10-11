@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, useMatch } from 'react-router-dom';
-import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
+
 
 
 
@@ -28,15 +28,7 @@ const App = () => {
     <div className='text-default min-h-screen bg-white'>
       {!isEducatorRoute && <Navbar />}
        
-        <header>
-        <Show when="signed-out">
-          <SignInButton />
-          <SignUpButton />
-        </Show>
-        <Show when="signed-in">
-          <UserButton />
-        </Show>
-      </header>
+      
 
       <Routes>
        <Route path='/' element={<Home/>}/>
