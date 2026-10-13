@@ -4,3 +4,27 @@
 *{
   font-family: Outfit;
 }
+
+
+  @import "tailwindcss";
+
+@theme {
+  --text-course-details-heading-small: 26px;
+  --text-course-details-heading-small--line-height: 36px;
+
+  --text-course-details-heading-large: 36px;
+  --text-course-details-heading-large--line-height: 44px;
+
+  --text-home-heading-small: 28px;
+  --text-home-heading-small--line-height: 36px;
+
+  --text-home-heading-large: 48px;
+  --text-home-heading-large--line-height: 56px;
+
+  --text-default: 15px;
+  --text-default--line-height: 21px;
+
+  --grid-template-auto:
+      repeat(auto-fit, minmax(200px,1fr))
+}   
+                     
